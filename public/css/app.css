@@ -1,0 +1,177 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(239, 176, 227, 0.24);
+}
+
+.bodoni-moda-sc-popop2 {
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.navbar-buttons{
+
+}
+
+.home{
+    height: 100vh;
+    background-image: url("/images/background/woman.png");
+    background-size: cover;
+}
+
+.home h1{
+    width: 400px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff9eb3, #ffd1dc);
+
+}
+.navbar .logo {
+
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #e84b93;
+}
+
+.navbar ul .btn.toggle a{
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.navbar ul .btn.toggle{
+    background-color: #ffe6ea;
+    color: #ff00e0;
+
+}
+
+.language-switch{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    margin-left: 25px;
+}
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.navbar ul .btn a {
+    color: #f5ffef;
+    text-decoration: none;
+}
+.navbar ul .btn:hover {
+    background-color: #ffe6ea;
+    color: #ff9eb3;
+
+    a{
+        color: #ff00e0;
+    }
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background: linear-gradient(90deg, #ff9eb3, #ffd1dc);
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    .navbar ul.show {
+        display: flex;
+        top: 111px;
+        z-index: 3;
+    }
+    .navbar ul .btn {
+        margin: 10px 0;
+        width: 100%;
+        font-size: 20px;
+    }
+    .menu-toggle {
+        display: block;
+        position: relative;
+        left: 100px;
+    }
+
+    .language-switch{
+        left: 10px;
+    }
+
+    .greeting{
+        font-size: 8px;
+        position: relative;
+        left: 10px;
+        width: 229px;
+        padding-top: 20px;
+    }
+
+}
